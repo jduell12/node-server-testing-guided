@@ -20,4 +20,14 @@ server.get("/hobbits", (req, res) => {
     });
 });
 
+server.post("/hobbits", (req, res) => {
+  Hobbits.insert(req.body)
+    .then((ids) => {
+      res.status(201).json({ data: ids });
+    })
+    .catch((err) => {
+      res.status(500).json(err);
+    });
+});
+
 module.exports = server;
