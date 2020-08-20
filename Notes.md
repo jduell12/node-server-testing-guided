@@ -46,6 +46,8 @@ The following questions will help Jest to create a suitable configuration for yo
 - if using for backend testing it's asynchronous so need to tell jest
   - put return in front of the operation
   - put async before the function and await the operation
+    - will get warning from Jest for worker process get rid of the warning use --runInBand or -i
+    - don't use until run into a problem with test failing then passing
 
 ## Supertest
 
