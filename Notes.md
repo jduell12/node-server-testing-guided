@@ -46,3 +46,8 @@ The following questions will help Jest to create a suitable configuration for yo
 - if using for backend testing it's asynchronous so need to tell jest
   - put return in front of the operation
   - put async before the function and await the operation
+
+## Supertest
+
+- supertest will run the server for the instance of the test
+- each test will get it's own isntance of the server
