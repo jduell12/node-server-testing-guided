@@ -53,3 +53,13 @@ The following questions will help Jest to create a suitable configuration for yo
 
 - supertest will run the server for the instance of the test
 - each test will get it's own isntance of the server
+
+## Postgres SQL
+
+- change environment to production
+- npm i pg -> download postgres as denpendency
+- deploy database on heroku through github
+- go to resources and add on get heroku postgres
+- add DB_ENV in Heroku to use production environment variable
+- need to run migration on database to have the tables set up
+- open console in heroku to run migration and seeds
