@@ -1,4 +1,12 @@
-const pgConnection = process.env.DATABASE_URL || "postgresql://postgres@localhost/hobbits";
+const pgConnection =
+  process.env.DATABASE_URL || "postgresql://postgres@localhost/hobbits";
+
+// const samplePgConnectionObj = {
+//   host: "localhost", //where is the server
+//   database: "hobbits", //name of db the server can have multiple dbs
+//   username: "sam", //username
+//   password: "pass", //password
+// };
 
 module.exports = {
   development: {
